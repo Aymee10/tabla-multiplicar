@@ -1,5 +1,11 @@
 # Multiplicador
-Clase con la responsabilidad de crear la tabla de multiplicar de un número. Dado un número entero, "n", devuelva su tabla de multiplicar (del 1 al 10).
+
+[![Java](https://img.shields.io/badge/Java-21-blue?logo=java)](https://www.oracle.com/java/technologies/javase/21-relnotes.html)
+[![JUnit](https://img.shields.io/badge/JUnit-5.12-green?logo=junit5)](https://junit.org/junit5/)
+[![Hamcrest](https://img.shields.io/badge/Hamcrest-3.0-orange)](http://hamcrest.org/JavaHamcrest/)
+[![Maven](https://img.shields.io/badge/Maven-21-red?logo=apachemaven)](https://maven.apache.org/)
+
+Clase con la responsabilidad de crear la **tabla de multiplicar** de un número. Dado un número entero, "n", devuelva su tabla de multiplicar (del 1 al 10).
 Cada múltiplo n * i (donde 1 <= i => 10) debe imprimirse en una nueva línea en la forma: n x i = resultado. (Tabla de multiplicación)
 
 Ejemplo: dado n = 5
