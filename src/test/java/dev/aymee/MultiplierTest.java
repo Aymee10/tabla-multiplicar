@@ -40,7 +40,7 @@ public class MultiplierTest {
     
     @Test
     public void EntryIsNotInteger(){
-         String simulatedEntry="H\n";
+         String simulatedEntry="H\nAA\n2\n";
        System.setIn( new ByteArrayInputStream(simulatedEntry.getBytes()));
        ByteArrayOutputStream out=new ByteArrayOutputStream();
        System.setOut(new PrintStream(out));
