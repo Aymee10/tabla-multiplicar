@@ -1,10 +1,9 @@
 package dev.aymee;
 
-/**
- * Hello world!
- */
+
 public class App {
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Multiplier multi=new Multiplier();
+        multi.Multiply();
     }
 }

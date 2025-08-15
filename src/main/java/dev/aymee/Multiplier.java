@@ -16,7 +16,7 @@ public class Multiplier {
         while (retry) {
             
         
-        System.out.println("Escribe el número");
+        System.out.println("Escribe el número:");
         try{
             int number=scanner.nextInt();
             retry=false;
