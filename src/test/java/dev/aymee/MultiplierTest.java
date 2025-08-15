@@ -25,6 +25,7 @@ public class MultiplierTest {
        multi.Multiply();
 
        String output=out.toString();
+
        assertThat(output,containsString("5 x 1 = 5"));
        assertThat(output,containsString("5 x 3 = 15"));
        assertThat(output,containsString("5 x 4 = 20"));
@@ -33,6 +34,23 @@ public class MultiplierTest {
        assertThat(output,containsString("5 x 9 = 45"));
        assertThat(output,containsString("5 x 10 = 50"));
        assertThat(output, containsString("Escribe el número:"));
+
+    }
+
+    
+    @Test
+    public void EntryIsNotInteger(){
+         String simulatedEntry="H\n";
+       System.setIn( new ByteArrayInputStream(simulatedEntry.getBytes()));
+       ByteArrayOutputStream out=new ByteArrayOutputStream();
+       System.setOut(new PrintStream(out));
+
+       Multiplier multi=new Multiplier();
+       multi.Multiply();
+
+       String output=out.toString();
+
+       assertThat(output, containsString("Debe escribir un número, intente de nuevo"));
 
     }
 
