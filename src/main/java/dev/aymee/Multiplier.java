@@ -1,13 +1,14 @@
 package dev.aymee;
 
+import java.io.InputStream;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Multiplier {
     Scanner scanner;
 
-    public Multiplier() {
-        this.scanner = new Scanner(System.in);
+    public Multiplier(InputStream in) {
+        this.scanner = new Scanner(in);
        
 
     }
